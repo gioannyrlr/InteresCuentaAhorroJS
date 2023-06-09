@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interés de Cuenta de Ahorros</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function calcularInteres() {
+      // Obtener el monto inicial ingresado por el usuario
+      const montoInicial = parseFloat(document.getElementById("monto-inicial").value);
+      
+      // Constantes del cálculo
+      const tasaInteresMensual = 0.0125;   // 1.25% mensual
+      const meses = 12;
+
+      // Variable de cálculo
+      let saldo = montoInicial;
+
+      // Realizar el cálculo mensual
+      for (let i = 1; i <= meses; i++) {
+        saldo += 250;  // Ingreso mensual de 250
+
+        // Calcular el interés mensual y sumarlo al saldo
+        const interesMensual = saldo * tasaInteresMensual;
+        saldo += interesMensual;
+      }
+
+      // Calcular el interés total obtenido a fin de año, restando el monto incial y lo percibido mensualmente
+      const interesTotal = saldo - montoInicial - (250*meses);
+
+      // Mostrar los resultados
+      document.getElementById("interes-total").textContent = interesTotal.toFixed(2);
+      document.getElementById("saldo-total").textContent = saldo.toFixed(2);
+    }
+
+  </script>
+</head>
+<body>
+  <h1>Interés de Cuenta de Ahorros</h1>
+  
+  <label for="monto-inicial">Monto Inicial</label><br>
+  <input type="number" id="monto-inicial" placeholder="(Bs.)"><br>
+  <button id="btnCalcular" onclick="calcularInteres()">Calcular</button>
+  
+  <h2>Estadísticas</h2>
+  <p>El interés total obtenido a fin de año es: <b><span id="interes-total"></span></b></p>
+  <p>El saldo total a fin de año es: </var><b><span id="saldo-total"></span></b></p>
+</body>
+</html>

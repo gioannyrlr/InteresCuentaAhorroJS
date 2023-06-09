@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  padding: 0;
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+h1{
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  background-color: rgb(188, 205, 255);
+  border-radius: 50px;
+  margin: calc(25% + 5px);
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+h2{
+  color: black;
+  padding: 15px;
+  text-align: center;
+  font-weight: 200 !important;
+  letter-spacing: 1px;
+  background-color: rgb(227, 234, 255);
+  border-radius: 50px;
+  margin: calc(25% + 5px);
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+h4{
+  color: black;
+  padding: 8px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: rgb(235, 240, 255);
+  border-radius: 50px;
+  margin: calc(41% + 5px);
+  margin-top: 10px !important;
+}
+
+h5{
+  color: black;
+  padding: 8px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: rgb(235, 240, 255);
+  border-radius: 50px;
+  margin: calc(33% + 5px);
+  margin-top: 10px !important;
+}
+
+#monto-inicial{
+  padding: 4px;
+  margin: 5px;
+  width: 15%;
+  border-radius: 15px !important;
+  border-color: rgb(213, 213, 213);
+  border-style: solid;
+}
+
+#btnCalcular{
+  padding: 5px;
+  margin: 15px;
+  width: 15%;
+  border-radius: 15px !important;
+  border-color: rgb(185, 238, 182);
+  background-color: rgb(211, 255, 205);
+  border-style: solid;
+}
+
+#btnCalcular:hover{
+  border-color: rgb(166, 235, 163);
+  background-color: rgb(184, 255, 175);
+  border-style: solid;
+  transition: 0.2s ease;
+}
+
+#interes-total{
+  margin-top: 10px;
+  line-height: 30px;
+}
